@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portifólio | Juan Alan</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content=""> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" id="iconshortcut" href="assets/letra-j.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <div class="logonv">
+                    <img src="assets/letra-j.png">
+                </div>
+                <div class="mobile">
+                <div class="mobilenv_btn" id="mobilebtn" onclick="mobileopen();">
+                    <img src="assets/burguer.png" alt="MENU">
+                </div>
+                <div class="mobilelinks" id="mobilelinks">
+                    <a href="#">Início</a>
+                    <a href="#sec2">Habilidades</a>
+                    <a href="#sec3">Portifolio</a>
+                    <a href="#sec4">Sobre Mim</a>
+                    <a href="#footer">Contato</a>
+                </div></div>
+
+                <ul class="navlinks">
+                    <a href="#">Início</a>
+                    <a href="#sec2">Habilidades</a>
+                    <a href="#sec3">Portifolio</a>
+                    <a href="#sec4">Sobre Mim</a>
+                    <a href="#footer">Contato</a>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+            <div class="sec1" id="sec1">
+            <div class="videoCsc1">
+            <video class="videosc1" muted autoplay loop>
+                <source src="assets/codigo.mp4" type="video/mp4">
+            </video></div>
+                
+                <div class="textsc1">
+                    <h5>Bem-Vindo(a) ao meu Portfolio!
+                    </h5>
+                    <h2 id="myhistory"></h2>
+                    <a href="https://github.com/juan01alan" target="_blank">MEU GITHUB</a>
+                </div>
+            </div>
+
+            <section class="sec2" id="sec2">
+                <div class="titlesc2">
+                    <h2>HABILIDADES</h2>
+                    <p>Linguagens que tenho experiência.
+                    </p>
+                </div>
+
+                <div class="habilidadessc2">
+                    <div class="iconssc2">
+                        
+                        <div class="iconsc2" id="cssICON" onmouseover="css();"><img src="assets/css.png" alt="CSS"></div>
+                        
+                        <div class="iconsc2" id="htmlICON"  onmouseover="html();"><img src="assets/html.png" alt="HTML"></div>
+
+                        <div class="iconsc2" id="javaICON" onmouseover="java();">
+                        <img src="assets/java.png" alt="JAVA"></div>
+
+                        
+                        <div class="iconsc2" id="reactICON" onmouseover="react();">
+                            <img src="assets/react.png" alt="React"></div>
+
+                            
+                        <div class="iconsc2" id="GitICON" onmouseover="git();">
+                            <img src="assets/github.png" alt="GitHub"></div>
+
+                            
+                        <div class="iconsc2" id="Elementor" onmouseover="elementor();">
+                            <img src="assets/elementor.png" alt="Elementor"></div>
+
+                    </div>
+                    <div class="texthsc2" id="texthsc2">
+                        <h4>/*Passe o mouse(ou toque) nos icones para ler as minhas habilidades*/</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec3" id="sec3">
+                <div class="textsc3">
+                    <h2>PORTIFÓLIO</h2>
+                    <p>Colocando meu conhecimento em prática!<br>/*Clique para abrir os projetos*/</p>
+                </div>
+
+                <div class="gridsc3">
+                    <div class="itemsc3" onclick="itemsrc1();">
+                        <div class="imgsc3">
+                            <h5>PREVISÃO DO TEMPO</h5>
+                        <img src="assets/mold1.png" alt="PREVISÃO DO TEMPO"></div>
+                        <p>Utilizando HTML, CSS e JS. Um site simples construido sobre uma API com dados reais extraidos via JSON.</p>
+                    </div>
+                    
+                    <div class="itemsc3" onclick="itemsrc3();">
+                        <div class="imgsc3" >
+                            <h5>Formulário de Contato</h5>
+                        <img src="assets/mold3.png" alt="FORMULARIO"></div>
+                        <p>Utilizando HTML,CSS e PHP. Um formulário web que capta dados e envia para um documento php que envia automaticamente um email.</p>
+                    </div>
+
+                    <div class="itemsc3" onclick="itemsrc2();">
+                        <div class="imgsc3" >
+                            <h5>Disney Plus Clone</h5>
+                        <img src="assets/mold2.png" alt="DISNEY+"></div>
+                        <p>Utilizando HTML, CSS e JS. Um site feito exclusivamente para testar minhas habilidades, visando copiar o layout do Disney Plus com total responsividade e adaptabilidade a qualquer dispositivo.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="sec4" id="sec4">
+                <div class="centersc4">
+                    <div class="gifsc4">
+                        <img src="assets/back.png" alt="PLANET">
+                    </div>
+                    <div class="textsc4">
+                        <h1>SOBRE MIM</h1>
+                        <h5>
+                            Meu nome é Juan Alan e eu decidi trilhar o caminho da programação. Possuo experiência em Desenvolvimento Web e criação de sistemas com Python.
+                        </h5><br>
+                            <h5> Não trabalhei profissionalmente com nenhum projeto até então, o seu pode ser o primeiro ;).</h5>
+                            <br><h5>
+                            Atualmente estou focado no desenvolvimento front end e já entendo tecnologias como HTML, CSS, JS, Bootstrap, PHP e um pouco de  ReactJS.
+                        </h5>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer id="footer">
+            <div class="contact">
+                <h6>Informações para contato</h6>
+                <p><i class="fa-solid fa-envelope"></i>juan01alan@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i>+55 (71) 99702-4566</p>
+            </div>
+        </footer>
+        
+        <script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

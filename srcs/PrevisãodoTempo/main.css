@@ -1,0 +1,249 @@
+body{
+    background: black;
+}
+section.temposc{
+    background: url('back.jpg') center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+div.img{
+    display: flex;
+    padding: 2vh 0;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    position: absolute;
+    top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.img h1{
+    margin: 0 4px;
+    background-image: linear-gradient(to right,orangered, orangered, orange, white, whitesmoke);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img.icon{
+    height: 50%;
+    opacity: 0.7;
+}
+
+.gif{
+    width: max(100px,1vw);
+}
+
+div.containerbottom{
+    position: absolute;
+    height: fit-content;
+    max-height: 15vh;
+    width: fit-content;
+    max-width:40%;
+    bottom: 1vh;
+    left: 1vw;
+    border-radius: 0px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    transition: max-height 1s ease, border-radius 1s ease, background 1s ease;
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    animation: blink 4s alternate infinite;
+}
+
+.containerbottom *{
+    margin: 1vh 0;
+}
+
+@keyframes blink {
+    0%{opacity: 1;}
+    96%{opacity: 1;}
+    97%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blinks {
+    0%{opacity: 1;}
+    96%{opacity: 1;}
+    97%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+div.containerbottom:hover{
+    background: rgba(0,0,150,0.7);
+    border-radius: 20px;
+    max-height: 50vh;
+    animation: blinks 4s alternate infinite;
+}
+
+div.icondiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.icondiv *{
+    margin: 0vh 4px;
+}
+
+div.tempo{
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8vh;
+    margin: -2vh 0 4vh 0;
+    position: relative;
+}
+
+div.search{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.search h3{
+    
+    background-image: linear-gradient(to top,orangered,white,whitesmoke);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.search input{
+    display: block;
+    opacity: 0.7;
+}
+
+div.search input[type='search']{
+    padding: 1em 4em;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    margin: 10px 0;
+    background: white;
+    border-radius: 50px;
+}
+div.search input[type='submit']{
+    border-radius: 50px;
+    width: 50%;
+    padding: 1em 1.2em;
+    border: 1px solid black;
+    background: white;
+}
+
+
+/**FIM DO MAIN CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/**BOOT CSS */
+
+p,span, a,select{    
+    font-size: 0.6rem;
+}
+
+
+img{
+    object-fit:contain;
+    max-width: 100%!important;
+    height: 100%;
+    width: auto;
+}
+
+@media only screen and (max-width: 575px) {
+    /**small phones */
+    html{
+        font-size: 1rem;
+    }
+    .containerbottom{
+        max-width: 90%!important;
+        bottom: 2vh;
+        left: 0;
+        margin: 0 5%;
+        height: 10vh;
+    }
+    .gif{
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    /**BIG PHONES */
+    html{
+        font-size: 1.2rem;
+    }
+    .containerbottom{
+        max-width: 60%!important;
+        bottom: 2vh;
+        left: 0;
+        margin: 0 5%;
+        height: 10vh;
+    }
+    .gif{
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /**Big Tablets */
+    html{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /**DESKTOP */
+    html{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1679px){
+    /**DESKTOP MEDIUM */
+    html{
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1680px) {
+    /**BIG DESKTOP */
+    html{
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 2080px) {
+    /**BIG THAN DESKTOP */
+    html{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media only screen and (min-width: 3000px) {
+    /**EXTRA LARGUE DESKTOP */
+    html{
+        font-size: 3rem;
+    }
+}
